@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nika Šljubura">
+        <title>Božićni generator tablica odlučivanja</title>
+        <title>6x10 Dynamic Table</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+    </div>
+
+    <div class="body-content">
+        <div class="Header">
+            <div class="Title">
+                Božićni generator tablica</br> odlučivanja
+            </div>
+            <div class="Buttons">
+                <button id="single_solution">PRVI PRIMJER</button>
+                <button id="different_solutions">DRUGI PRIMJER</button>
+            </div>
+        </div>
+        
+        
+        <div class="TableHolder">
+            <table id="dynamicTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Φ1</th>
+                        <th>Φ2</th>
+                        <th>Φ3</th>
+                        <th>Φ4</th>
+                        <th>Φ5</th>
+                        <th>Si</th>
+                        <th>Oi</th>
+                        <th>α * Si + (1 - α) * Oi</th>
+                        <th>LP</th>
+                        <th>Kriterij</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+    
+        <div class="bottom-section">
+            <div class="left">
+                <div class="table-title">
+                    Regret (Savage)
+                </div>
+                <table id="leftTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Φ1</th>
+                            <th>Φ2</th>
+                            <th>Φ3</th>
+                            <th>Φ4</th>
+                            <th>Φ5</th>
+                            <th>Najveća greška</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right">
+                <div class="slider-container">
+                    <div class="slider-header">
+                        <p class="table-title">Alfa (α)</p>
+                        <input id="alphaSlider" type="range" min="0" max="1" step="0.01" value="0">
+                        <p id="alphaValue">α = 0</p>
+                    </div>
+                    
+                    <div class="description">Hurwiczev kriterij ispunjava akcija A<span id="hurwiczAction"></span> za vrijednosti α manje od:</div>
+                    <table id="alphaDependencyTable">
+                        <thead>
+                            <tr>
+                                <th>Akcija</th>
+                                <th>α vrijednost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025: Nika Šljubura
+        </div>
+    </div>
+
+    <div class="body-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
