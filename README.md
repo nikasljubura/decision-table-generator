@@ -1,4 +1,4 @@
-Dobrodošli u božićni generator tablice odlučivanja!
+# Dobrodošli u božićni generator tablice odlučivanja!
 
 Pritiskom na gumb 'PRVI PRIMJER' generirat ćete tablicu u kojoj jedna akcija zadovoljava sva četiri kriterija odlučivanja.
 
